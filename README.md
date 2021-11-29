@@ -22,7 +22,7 @@ Clone the repo with the method that best suits you, then edit the `.env.example`
 Either build and run a Docker container or install the code and its dependencies using Composer.
 
 #### Build and run with Docker
-`docker build -t lackSMS . ; docker run -d lackSMS`
+`docker build -t lacksms . ; docker run -d -p 80:80 lacksms`
 
 #### Installation with Composer
 `composer install`
