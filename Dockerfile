@@ -23,5 +23,6 @@ COPY robots.txt /lackSMS/robots.txt
 
 RUN composer install
 
-RUN a2enmod rewrite remoteip && \
-    a2enconf lackSMS
+RUN chown -R www-data:www-data .
+
+RUN a2enconf lackSMS
